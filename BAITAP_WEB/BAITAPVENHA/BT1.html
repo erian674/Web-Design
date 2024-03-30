@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BÀI TẬP VỀ FORM</title>
+    </head>
+    <body>
+        <h1 align="center">BÀI TẬP 1</h1>
+        <form action="login.php" method="post">
+            <table border="1">
+                <tr>
+                    <td colspan="2" align="center">
+                        <h2>THÔNG TIN ĐĂNG NHẬP</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td align="center">Mật Khẩu:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td align="center">Nhập lại mật khẩu:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <h2>THÔNG TIN CÁ NHÂN</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">*Họ và tên:</td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td align="center">Phái:</td>
+                    <td>
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Nam</label>
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Ngày sinh:</td>
+                    <td>
+                        <input type="number" name="ngay" min="1" max="31" placeholder="Ngày" required>
+                        <input type="number" name="thang" min="1" max="12" placeholder="Tháng" required>
+                        <input type="number" name="nam" min="1900" max="9999" placeholder="Năm" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">*Số điện thoại:</td>
+                    <td><input type="tel" name="tel"></td>
+                </tr> 
+                <tr>
+                    <td colspan="2" align="center">
+                        <h2>ĐỊA CHỈ</h2>
+                    </td>
+                </tr>       
+                <tr>
+                    <td align="center">Quốc gia:</td>
+                    <td><input type="text" name="Quốc Gia"></td>
+                </tr>  
+                <tr>
+                    <td align="center">Tỉnh/Thành:</td>
+                    <td><input type="text" name="Tỉnh/Thành"></td>
+                </tr> 
+                <tr>
+                    <td align="center">Quận/Huyện:</td>
+                    <td><input type="text" name="Quận/Huyện"></td>
+                </tr> 
+                <tr>
+                    <td align="center">Địa chỉ nhà:</td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Đăng ký">
+                        <input type="reset" value="Xóa form">
+                    </td>
+                </tr>
+            </table>
+    </body>
+</html>
